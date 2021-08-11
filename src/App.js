@@ -9,8 +9,6 @@ export default function App() {
   const [status, setStatus] = useState('stopped'); // timer status (running, stopped, waiting)
 
   const start = useCallback(() => setStatus('running'), []);
-  const wait = useCallback(() => setStatus('waiting'), []);
-
   const stop = useCallback(() => {
       setStatus('stopped');
       setTimer(0);
@@ -21,6 +19,16 @@ export default function App() {
   const reset = useCallback(() => {
       setStatus('running');
       setTimer(0);
+    },
+    [],
+  );
+
+  const wait = useCallback((e) => {
+    setTimeout(() => { // if amount of clicks is 2 when 299 ms have passed we will set waiting status
+      if (e.detail === 2) {
+        setStatus('waiting');
+      }
+    }, 299);
     },
     [],
   );
@@ -57,7 +65,6 @@ export default function App() {
         <button
           className="button is-primary"
           onClick={wait}
-          disabled={status === 'waiting'}
         >
           Wait
         </button>
