@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react_timer/static/css/main.086192c9.chunk.css",
-    "main.js": "/react_timer/static/js/main.c149613c.chunk.js",
-    "main.js.map": "/react_timer/static/js/main.c149613c.chunk.js.map",
+    "main.js": "/react_timer/static/js/main.cf1c2e2e.chunk.js",
+    "main.js.map": "/react_timer/static/js/main.cf1c2e2e.chunk.js.map",
     "runtime-main.js": "/react_timer/static/js/runtime-main.f657cacc.js",
     "runtime-main.js.map": "/react_timer/static/js/runtime-main.f657cacc.js.map",
     "static/css/2.41953c31.chunk.css": "/react_timer/static/css/2.41953c31.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.41953c31.chunk.css",
     "static/js/2.92443bb3.chunk.js",
     "static/css/main.086192c9.chunk.css",
-    "static/js/main.c149613c.chunk.js"
+    "static/js/main.cf1c2e2e.chunk.js"
   ]
 }
